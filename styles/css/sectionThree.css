@@ -1,0 +1,64 @@
+.container {
+  background: #fff;
+  padding-left: 10px;
+  border-radius: 10px;
+  text-align: left;
+  padding-top: 10px;
+}
+
+#extraOptions {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#ownCheck {
+  margin-top: 10px;
+}
+
+#ownJob {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #615454;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+#handler {
+  color: #a09797;
+  font-size: 14px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#radio1 {
+  color: #615454;
+  margin-left: 10px;
+  font-size: 14px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#radio2 {
+  color: #615454;
+  margin-left: 10px;
+  font-size: 14px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.radio-container {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.radio-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/*# sourceMappingURL=sectionThree.css.map */

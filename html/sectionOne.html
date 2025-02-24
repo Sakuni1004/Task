@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client section</title>
+    <link rel="stylesheet" href="../styles/css/sectionOne.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="FirstSectionTitle">
+      <span id="sectionOnetopic">Select a client</span>
+    </div>
+
+    <div class="search-container">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" id="searchInput" placeholder="Search clients..." />
+      <i class="fas fa-times clear-icon" id="clearBtn"></i>
+    </div>
+
+    <div class="data-section">
+      <div class="table-header">
+        <span></span>
+        <span>Organization</span>
+        <span>Code</span>
+        <span>Handler</span>
+      </div>
+      <div class="table-body" id="tableBody"></div>
+      <div class="table-footer">
+        <span id="pageInfo">1-5 of 10</span>
+        <i class="fas fa-angle-double-left pagination-icon" id="firstBtn"></i> 
+        <i class="fas fa-angle-left pagination-icon" id="prevBtn"></i>  
+        <i class="fas fa-angle-right pagination-icon" id="nextBtn"></i> 
+        <i class="fas fa-angle-double-right pagination-icon" id="lastBtn"></i>
+      </div>
+    </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
+
+

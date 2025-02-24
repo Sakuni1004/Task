@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown with Template section</title>
+    <link rel="stylesheet" href="../styles/css/sectionTwo.css" />
+  </head>
+  <body>
+    <div class="container">
+      <span id="secondSectionTitle">Use a template?</span>
+
+      <select id="templateDropdown">
+        <option value="0">Select Template</option>
+        <option value="1">Template 1</option>
+      </select>
+
+      <div id="template1Div" class="hidden-div">
+        <span id="secondSectionTitle">Views</span>
+        <select id="viewDropdown">
+          <option value="">Select View</option>
+          <option value="view1">View 1</option>
+          <option value="view2">View 2</option>
+        </select>
+        <div id="viewContainer" class="view-container">
+          <!-- Left Side -->
+
+          <div class="left-side">
+            <span id="leftTitle">Title</span>
+            <div class="checkbox-group">
+              <label
+                ><input type="checkbox" class="checkbox" checked /> Data</label
+              >
+              <label
+                ><input type="checkbox" class="checkbox" checked />
+                Status</label
+              >
+              <label
+                ><input type="checkbox" class="checkbox" checked /> Billing
+                Plans</label
+              >
+              <label
+                ><input type="checkbox" class="checkbox" checked />
+                Activities</label
+              >
+              <label
+                ><input type="checkbox" class="checkbox" checked /> Phase
+                Quotes</label
+              >
+              <label
+                ><input type="checkbox" class="checkbox" checked />
+                Stages</label
+              >
+            </div>
+          </div>
+
+          <!-- Right Side -->
+          <div class="right-side">
+            <span id="rightTitle">Estimates</span>
+            <div class="checkbox-group">
+              <label
+                ><input type="checkbox" class="checkbox" checked /> Time</label
+              >
+              <label
+                ><input type="checkbox" class="checkbox" checked />
+                Material</label
+              >
+              <label
+                ><input type="checkbox" class="checkbox" checked />
+                Purchase</label
+              >
+              <br />
+              <label
+                ><input
+                  type="checkbox"
+                  class="checkbox"
+                  id="lastEstimate"
+                  checked
+                />
+                Use Actual Values</label
+              >
+              <br />
+            </div>
+          </div>
+        </div>
+        <div>
+          <span id="secondSectionTitle">Phases to copy</span>
+
+          <table id="phasesTable" class="phases-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Phase</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input type="checkbox" class="checkbox" id="phase001" />
+                </td>
+                <td> 001</td>
+                <td>Description for Phase 001</td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" class="checkbox" id="phase002" />
+                </td>
+                <td> 002</td>
+                <td>Description for Phase 002</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

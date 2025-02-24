@@ -1,0 +1,67 @@
+$text-colorOne: #615454;
+$text-colorTwo: #a09797;
+$font-size: 14px;
+$font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+.container {
+  background: #fff;
+  padding-left: 10px;
+  border-radius: 10px;
+  text-align: left;
+  padding-top: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#extraOptions {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#ownCheck {
+  margin-top: 10px;
+}
+
+#ownJob {
+  font-size: $font-size;
+  margin-top: 10px;
+  color: $text-colorOne;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#handler {
+  color: $text-colorTwo;
+  font-size: $font-size;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#radio1 {
+  color: $text-colorOne;
+  margin-left: 10px;
+  font-size: $font-size;
+}
+
+#radio2 {
+  color: $text-colorOne;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.radio-container {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.radio-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
