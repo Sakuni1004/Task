@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   button?.addEventListener("click", () => {
     if (modal) {
       modal.style.display = "flex";
-      updateContent();
+      ContentUpdate();
     }
   });
 
@@ -26,13 +26,13 @@ document.addEventListener("DOMContentLoaded", () => {
       location.reload();
     } else {
       currentPage = (currentPage % 3) + 1;
-      updateContent();
+      ContentUpdate();
     }
   });
 
   
 
-  const updateContent = () => {
+  const ContentUpdate = () => {
     if (!jobContent) return console.error("Error: jobContent element not found!");
     jobContent.innerHTML = "";
 
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
         )
         .then((data) => {
           jobContent.innerHTML = data;
-          if (currentPage === 2) initializeDropdown();
+          if (currentPage === 2) setupDropdown();
         })
         .catch((error) => console.error(`Error loading ${page}:`, error));
     } else {
@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let selectedCheckboxes = new Set();
     let filteredData = [...data];
 
-    const filterData = (query) => {
+    const applySearchFilter = (query) => {
       filteredData = query
         ? data.filter((item) =>
             [item.org, item.code, item.handler].some((val) =>
@@ -150,13 +150,13 @@ document.addEventListener("DOMContentLoaded", () => {
       displayData();
     };
 
-    searchInput.addEventListener("input", (e) => filterData(e.target.value));
+    searchInput.addEventListener("input", (e) => applySearchFilter(e.target.value));
 
     const displayData = () => {
       tableBody.innerHTML = "";
 
-      const slicedData = filteredData.slice(currentIndex, currentIndex + rowsPerPage);
-      slicedData.forEach((item) => {
+      const visibleRows = filteredData.slice(currentIndex, currentIndex + rowsPerPage);
+      visibleRows.forEach((item) => {
         const row = document.createElement("div");
         row.className = "table-row";
 
@@ -225,25 +225,25 @@ document.addEventListener("DOMContentLoaded", () => {
     displayData();
   });
 
-  const initializeDropdown = () => {
+  const setupDropdown = () => {
     const dropdown = document.getElementById("templateDropdown");
-    const template1Div = document.getElementById("template1Div");
+    const templateOneDiv = document.getElementById("templateOneDiv");
 
-    if (dropdown && template1Div) {
-      template1Div.classList.add("hidden-div");
+    if (dropdown && templateOneDiv) {
+      templateOneDiv.classList.add("hidden-div");
 
       dropdown.addEventListener("change", function () {
         console.log("Selected value:", this.value);
         if (this.value === "1") {
-          template1Div.classList.remove("hidden-div");
-          template1Div.classList.add("visible-div");
+          templateOneDiv.classList.remove("hidden-div");
+          templateOneDiv.classList.add("visible-div");
         } else {
-          template1Div.classList.add("hidden-div");
-          template1Div.classList.remove("visible-div");
+          templateOneDiv.classList.add("hidden-div");
+          templateOneDiv.classList.remove("visible-div");
         }
       });
     } else {
-      console.error("Dropdown or template1Div not found.");
+      console.error("Dropdown or templateOneDiv not found.");
     }
   };
 });

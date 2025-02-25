@@ -16,7 +16,7 @@ html {
 .center-btn {
   padding: 10px 20px;
   font-size: 18px;
-  background-color: #83b5ee;
+  background-color: #6dacf4;
   color: white;
   border: none;
   border-radius: 15px;
@@ -24,7 +24,7 @@ html {
   transition: background-color 0.3s;
 }
 .center-btn:hover {
-  background-color: #0056b3;
+  background-color: #003e80;
 }
 
 #clickModalkBtn {
@@ -96,7 +96,7 @@ html {
 }
 
 .dot.active {
-  background-color: #0056b3;
+  background-color: #003e80;
 }
 
 button {
@@ -111,7 +111,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #003e80;
 }
 
 /*# sourceMappingURL=style.css.map */
