@@ -50,7 +50,7 @@
 
 }
 .search-container .clear-icon:hover {
-  color: red;
+  color: rgb(15, 1, 1);
 }
 .search-container .clear-icon.show {
   opacity: 1;
