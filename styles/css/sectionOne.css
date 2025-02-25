@@ -19,6 +19,7 @@
   margin-top: 10px;
   align-self: center;
   margin-left: 10px;
+  border-color: #ccc;
 }
 .search-container input[type=text] {
   width: 100%;
@@ -34,17 +35,18 @@
 
 }
 .search-container input[type=text]:focus {
-  border-color: #007bff;
+  border-color: #ccc;
 }
 .search-container .clear-icon {
   position: absolute;
   right: 35px;
   font-size: 15px;
-  color: #aaa;
+  color: #1b0101;
   cursor: pointer;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.2s ease;
+  opacity: 1;
+  visibility:visible;
+  
+  display: block;
 
 }
 .search-container .clear-icon:hover {
@@ -60,6 +62,7 @@
   font-size: 15px;
   color: #333;
   pointer-events: none;
+  
 
 }
 
@@ -145,6 +148,7 @@
 .data-section #pageInfo {
   font-size: 14px;
   color: #888;
+  padding: 3px;
 }
 .data-section #firstBtn,
 .data-section #prevBtn,
@@ -153,6 +157,7 @@
   font-size: 12px;
   color: #888;
   cursor: pointer;
+  padding: 3px;
 }
 .data-section #firstBtn.disabled,
 .data-section #prevBtn.disabled,
